@@ -15,7 +15,7 @@ if [ -z "$LUA_PATH" ]; then
     LUA_PATH=";" # so ends with ;;
 fi
 # if user's LUA_PATH does not end with ;; then user doesn't want the default path ?
-export LUA_PATH="$APPDIR/share/luajit-2.1.0-beta3/?.lua;$APPDIR/share/lua/5.1/?.lua;$LUA_PATH"
+export LUA_PATH="$APPDIR/share/luajit-2.1/?.lua;$APPDIR/share/luajit-2.1.0-beta3/?.lua;$APPDIR/share/lua/5.1/?.lua;$LUA_PATH"
 
 if [ -z "$LUA_CPATH" ]; then
     LUA_CPATH=";"
