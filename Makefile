@@ -69,9 +69,9 @@ endif
 
 cmake: $(CMAKE)
 
-# AppImageTool
+# AppImageTool https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-aarch64.AppImage
 appimagetool:
-	curl $(CURL_DOH_URL) -Lfo appimagetool https://github.com/AppImage/AppImageKit/releases/download/continuous/obsolete-appimagetool-$(ARCH).AppImage
+	curl $(CURL_DOH_URL) -Lfo appimagetool https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-$(ARCH).AppImage
 	chmod u+x appimagetool
 ifneq ($(QEMU),)
 # Extract the AppImageTool
