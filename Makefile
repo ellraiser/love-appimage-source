@@ -71,7 +71,7 @@ cmake: $(CMAKE)
 
 # AppImageTool
 appimagetool:
-	curl $(CURL_DOH_URL) -Lfo appimagetool https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-$(ARCH).AppImage
+	curl $(CURL_DOH_URL) -Lfo appimagetool https://github.com/AppImage/appimagetool/releases/download/1.9.0/appimagetool-$(ARCH).AppImage
 	chmod u+x appimagetool
 ifneq ($(QEMU),)
 # Extract the AppImageTool
