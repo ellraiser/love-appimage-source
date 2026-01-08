@@ -299,7 +299,7 @@ $(TAR_OUTPUT): installdir/AppRun installdir/love.desktop installdir/love.svg ins
 
 $(APPIMAGE_OUTPUT): installdir/AppRun installdir/love.desktop installdir/love.svg installdir/license.txt appimagetool appimage-prepare
 ifeq ($(QEMU),)
-	./appimagetool installdir2 $(APPIMAGE_OUTPUT) --mksquashfs-opt -comp --mksquashfs gzip
+	./appimagetool installdir2 $(APPIMAGE_OUTPUT) --mksquashfs-opt -comp --mksquashfs-opt gzip
 else
 	cd squashfs-root/usr/lib && ../../AppRun ../../../installdir2 ../../../$(APPIMAGE_OUTPUT)
 endif
